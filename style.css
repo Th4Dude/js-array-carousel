@@ -15,7 +15,7 @@
 
 .slaider{
     width: 62.5rem;
-    height: 18.75rem;
+    height: 25rem;
     background-color: aqua;
     position: relative;
 }
@@ -25,6 +25,7 @@
     left: 50%;
     transform: translate(0 -50%);
     z-index: 999;
+    cursor: pointer;
 }
 
 .prev{
@@ -41,5 +42,24 @@
     width: 1.875rem;
     border-radius: 50%;
     text-align: center;
-    padding: 7px;
+    padding: 5px;
+}
+
+.size{
+   font-size: 20px;
+}
+
+.item{
+    height: 100%;
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.item img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
 }
