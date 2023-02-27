@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slaider{
+    width: 62.5rem;
+    height: 18.75rem;
+    background-color: aqua;
+    position: relative;
+}
+
+.prev, .next{
+    position: absolute;
+    left: 50%;
+    transform: translate(0 -50%);
+    z-index: 999;
+}
+
+.prev{
+    top: 1.25rem;
+}
+
+.next{
+    bottom: 20px;
+}
+
+.cerchio{
+    background-color: rgba(235, 237, 194, 0.8);
+    height: 1.875rem;
+    width: 1.875rem;
+    border-radius: 50%;
+    text-align: center;
+    padding: 7px;
+}
