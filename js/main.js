@@ -14,7 +14,7 @@ let items_content = '';
 
 /* ciclo immagini */
 
-for ( let i = 0; i < imgs.length; i++) {
+for (let i = 0; i < imgs.length; i++) {
     console.log(imgs[i])
     items_content += `<div class="item"><img src="img/${imgs[i]}" alt=""></div>`
 }
@@ -50,6 +50,10 @@ prev.addEventListener('click', function () {
         items[active].classList.remove('show');
         active--;
         items[active].classList.add('show');
+    } else {
+        items[active].classList.remove('show');
+        active = (items.length - 1);
+        items[active].classList.add('show');
     }
 })
 
@@ -59,8 +63,12 @@ next.addEventListener('click', function () {
         items[active].classList.remove('show');
         active++;
         items[active].classList.add('show');
+    } else {
+        items[active].classList.remove('show');
+        active = 0;
+        items[active].classList.add('show');
     }
-    
+
 });
 
 /* evento click */
