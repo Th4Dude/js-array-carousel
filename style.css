@@ -18,6 +18,8 @@
     height: 25rem;
     background-color: aqua;
     position: relative;
+    border: .125rem solid black;
+    border-radius: 10px;
 }
 
 .prev, .next{
